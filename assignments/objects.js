@@ -53,11 +53,11 @@ const antonietta = {
   "id": 5,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
-  "gender": "F"
-  multiplyNums: function(a,b){
+  "gender": "F",
+  multiplyNums: function(a, b){
     return a * b;
   }
-}
+};
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
