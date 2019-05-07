@@ -158,12 +158,16 @@ console.log(oldCars.length);
 //Once you have populated the BMWAndAudi array, use JSON.stringify(){takes all data and wraps it in a string} 
 //to show the results of the array in the console.
 
-let BMWAndAudi = inventory.filter(function(car_make) {
+
+//create new array
+//filter old array for only BMW and Audi cars
+
+let BMWAndAudi = inventory.filter((id) => {
 //Assign BMWAndAudi array to an inventory filtering function that will filter inventory by car_make
-    return car_make === "BMW" || "Audi";
+    return id.car_make === "BMW" || id.car_make === "Audi";
 //Return indexes with BMW and Audi car_make values
 });
-console.log(BMWAndAudi);
+console.log(JSON.stringify(BMWAndAudi));
 
 
 
